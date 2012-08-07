@@ -643,5 +643,5 @@ app = (function() {
 $fh.ready(function() {
   $fh.legacy.fh_timeout=60000;
   window.app = new window.App();
-  Backbone.history.start({pushState: false});
+  Backbone.history.start({pushState: false, root: document.location.pathname});
 });
